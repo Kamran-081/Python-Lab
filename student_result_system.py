@@ -16,13 +16,14 @@ def searchById(id):
         if(s_id == id):
             return student
         
-
+def sortByMarks():
+    return sorted(student_list, key = lambda s:s["marks"], reverse = True)
 
         
 choice = 1
 while(choice):
     print("enter any option: \n")
-    option  = input("1.Add student\n2. Search Student")
+    option  = input("1.Add student\n2. Search Student\n3.sort students by marks")
     if option == '1':
         id = int(input("enter Id: "))
         n = input("enter name: ")
@@ -36,6 +37,10 @@ while(choice):
             print(result)
         else:
             print("no such id exist!!")
+    
+    elif option == '3':
+        print("\n")
+        print(sortByMarks())
         
     else:
         print("invalid option")
