@@ -1,3 +1,5 @@
+# return true if an array can be partioned into sub arrays of equal sum
+
 def partition(arr):
     total = 0       
     for x in arr:
@@ -9,7 +11,7 @@ def partition(arr):
         return False
     
     
-    half = total // 2
+    half = total // 2   #half sum
     
    
     prefix_sum = 0

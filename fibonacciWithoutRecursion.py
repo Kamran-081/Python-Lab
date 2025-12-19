@@ -1,9 +1,15 @@
+# fibbonacci without recursion
+
 n = int(input("enter Number of  terms of fibonacii: "))
+if n <= 0:
+    print("n should be greater than 0!!")
+    exit()
+
 a = 0
 b = 1
-
 print(a)
 print(b)
+
 for i in range(n-2):
     c = a+b
     print(c)

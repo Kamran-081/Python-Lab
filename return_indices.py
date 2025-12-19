@@ -1,4 +1,4 @@
-#program to return indices of two numbers that add up to a targetr sum
+#program to return indices of two numbers that add up to a target sum
 
 
 def two_sum(arr, target):
@@ -14,4 +14,5 @@ def two_sum(arr, target):
 
 arr = [2, 7, 11, 15]
 target = 9
+# target = 17
 print(two_sum(arr, target))  # [0, 1]
